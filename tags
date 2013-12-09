@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APC_MMAP_H	apc_mmap.h	/^#define APC_MMAP_H$/;"	d
+BITS_CHAR_SHIFT	bloom.c	/^#define BITS_CHAR_SHIFT /;"	d	file:
+BITS_PER_CHAR	bloom.c	/^#define BITS_PER_CHAR /;"	d	file:
+BLOOM_BADARG	bloom.h	/^	BLOOM_BADARG,$/;"	e	enum:__anon1
+BLOOM_BAD_FILTER_SIZE	bloom.h	/^	BLOOM_BAD_FILTER_SIZE$/;"	e	enum:__anon1
+BLOOM_FAILURE	bloom.h	/^	BLOOM_FAILURE,$/;"	e	enum:__anon1
+BLOOM_NOTFOUND	bloom.h	/^	BLOOM_NOTFOUND,$/;"	e	enum:__anon1
+BLOOM_SUCCESS	bloom.h	/^	BLOOM_SUCCESS,$/;"	e	enum:__anon1
+DEFAULT_ELEMENTS_NUM	momo_bloomy.c	/^static const double DEFAULT_ELEMENTS_NUM = 100000000;$/;"	v	file:
+DEFAULT_ERROR_RATE	momo_bloomy.c	/^static const double DEFAULT_ERROR_RATE = 0.01;$/;"	v	file:
+MAP_ANON	apc_mmap.c	/^# define MAP_ANON /;"	d	file:
+MAP_NOSYNC	apc_mmap.c	/^#define MAP_NOSYNC /;"	d	file:
+MAX_HASHES	bloom.c	/^#define MAX_HASHES /;"	d	file:
+MOMO_BLOOMY_G	php_momo_bloomy.h	/^#define MOMO_BLOOMY_G(/;"	d
+PHP_FUNCTION	momo_bloomy.c	/^PHP_FUNCTION(confirm_momo_bloomy_compiled)$/;"	f
+PHP_FUNCTION	momo_bloomy.c	/^PHP_FUNCTION(momo_bloomy_add)$/;"	f
+PHP_FUNCTION	momo_bloomy.c	/^PHP_FUNCTION(momo_bloomy_has)$/;"	f
+PHP_FUNCTION	momo_bloomy.c	/^PHP_FUNCTION(momo_bloomy_info) $/;"	f
+PHP_MINFO_FUNCTION	momo_bloomy.c	/^PHP_MINFO_FUNCTION(momo_bloomy)$/;"	f
+PHP_MINIT_FUNCTION	momo_bloomy.c	/^PHP_MINIT_FUNCTION(momo_bloomy)$/;"	f
+PHP_MOMO_BLOOMY_API	php_momo_bloomy.h	/^#	define PHP_MOMO_BLOOMY_API /;"	d
+PHP_MOMO_BLOOMY_API	php_momo_bloomy.h	/^#	define PHP_MOMO_BLOOMY_API$/;"	d
+PHP_MOMO_BLOOMY_H	php_momo_bloomy.h	/^#define PHP_MOMO_BLOOMY_H$/;"	d
+PHP_MSHUTDOWN_FUNCTION	momo_bloomy.c	/^PHP_MSHUTDOWN_FUNCTION(momo_bloomy)$/;"	f
+PHP_RINIT_FUNCTION	momo_bloomy.c	/^PHP_RINIT_FUNCTION(momo_bloomy)$/;"	f
+PHP_RSHUTDOWN_FUNCTION	momo_bloomy.c	/^PHP_RSHUTDOWN_FUNCTION(momo_bloomy)$/;"	f
+_BLOOM_H_	bloom.h	/^#define _BLOOM_H_$/;"	d
+_apc_segment_t	apc_mmap.h	/^struct _apc_segment_t {$/;"	s
+_bloom_t	bloom.h	/^typedef struct _bloom_t {$/;"	s
+_filter_spec_t	bloom.h	/^typedef struct _filter_spec_t {$/;"	s
+apc_mmap	apc_mmap.c	/^apc_segment_t apc_mmap(char *file_mask, size_t size TSRMLS_DC)$/;"	f
+apc_segment_t	apc_mmap.h	/^typedef struct _apc_segment_t apc_segment_t;$/;"	t	typeref:struct:_apc_segment_t
+apc_unmap	apc_mmap.c	/^void apc_unmap(apc_segment_t *segment TSRMLS_DC)$/;"	f
+bloom	momo_bloomy.c	/^static bloom_t *bloom;$/;"	v	file:
+bloom_add	bloom.c	/^bloom_return bloom_add(bloom_t *bloom, const char *data, size_t data_len)$/;"	f
+bloom_calc_optimal	bloom.c	/^bloom_return bloom_calc_optimal(filter_spec_t *spec, size_t num_elements, double max_error_rate)$/;"	f
+bloom_clean	bloom.c	/^void bloom_clean(bloom_t *bloom)$/;"	f
+bloom_contains	bloom.c	/^bloom_return bloom_contains(bloom_t *bloom, const char *data, size_t data_len)$/;"	f
+bloom_gen_salts	bloom.c	/^static void bloom_gen_salts(bloom_t *bloom)$/;"	f	file:
+bloom_hash	bloom.c	/^static void bloom_hash(bloom_t *bloom, const char *data, size_t data_len, uint32_t *hash1, uint32_t *hash2)$/;"	f	file:
+bloom_init	bloom.c	/^bloom_return bloom_init(bloom_t *bloom, size_t num_elements, double max_error_rate)$/;"	f
+bloom_return	bloom.h	/^} bloom_return;$/;"	t	typeref:enum:__anon1
+bloom_t	bloom.h	/^} bloom_t;$/;"	t	typeref:struct:_bloom_t
+bloomy_initialized	momo_bloomy.c	/^static int bloomy_initialized = 0; \/* true if the bloomy has been initialized *\/$/;"	v	file:
+br	momo_bloomy.php	/^$br = (php_sapi_name() == "cli")? "":"<br>";$/;"	v
+confirm_momo_bloomy_compiled	php_momo_bloomy.h	/^PHP_FUNCTION(confirm_momo_bloomy_compiled);	\/* For testing, remove later. *\/$/;"	v
+filter	bloom.h	/^	uint8_t  *filter;$/;"	m	struct:_bloom_t
+filter_size	bloom.h	/^	size_t filter_size;$/;"	m	struct:_filter_spec_t
+filter_spec_t	bloom.h	/^} filter_spec_t;$/;"	t	typeref:struct:_filter_spec_t
+function	momo_bloomy.php	/^$function = 'confirm_' . $module . '_compiled';$/;"	v
+functions	momo_bloomy.php	/^$functions = get_extension_funcs($module);$/;"	v
+is_init	bloom.h	/^    int is_init;$/;"	m	struct:_bloom_t
+le_momo_bloomy	momo_bloomy.c	/^static int le_momo_bloomy;$/;"	v	file:
+max_error_rate	bloom.h	/^	double max_error_rate;$/;"	m	struct:_bloom_t
+mmap_file_mask	momo_bloomy.c	/^static char *mmap_file_mask = '\/tmp\/momo_bloomy_shm.xxx';$/;"	v	file:
+module	momo_bloomy.php	/^$module = 'momo_bloomy';$/;"	v
+momo_bloomy	php_momo_bloomy.h	/^PHP_MINFO_FUNCTION(momo_bloomy);$/;"	v
+momo_bloomy	php_momo_bloomy.h	/^PHP_MINIT_FUNCTION(momo_bloomy);$/;"	v
+momo_bloomy	php_momo_bloomy.h	/^PHP_MSHUTDOWN_FUNCTION(momo_bloomy);$/;"	v
+momo_bloomy	php_momo_bloomy.h	/^PHP_RINIT_FUNCTION(momo_bloomy);$/;"	v
+momo_bloomy	php_momo_bloomy.h	/^PHP_RSHUTDOWN_FUNCTION(momo_bloomy);$/;"	v
+momo_bloomy_add	php_momo_bloomy.h	/^PHP_FUNCTION(momo_bloomy_add);	\/* For testing, remove later. *\/$/;"	v
+momo_bloomy_functions	momo_bloomy.c	/^const zend_function_entry momo_bloomy_functions[] = {$/;"	v
+momo_bloomy_has	php_momo_bloomy.h	/^PHP_FUNCTION(momo_bloomy_has);	$/;"	v
+momo_bloomy_info	php_momo_bloomy.h	/^PHP_FUNCTION(momo_bloomy_info);$/;"	v
+momo_bloomy_init	momo_bloomy.c	/^static void function momo_bloomy_init()$/;"	f	file:
+momo_bloomy_module_entry	momo_bloomy.c	/^zend_module_entry momo_bloomy_module_entry = {$/;"	v
+num_elements	bloom.h	/^	size_t num_elements;$/;"	m	struct:_bloom_t
+num_hashes	bloom.h	/^	uint8_t num_hashes;$/;"	m	struct:_filter_spec_t
+phpext_momo_bloomy_ptr	php_momo_bloomy.h	/^#define phpext_momo_bloomy_ptr /;"	d
+roaddr	apc_mmap.h	/^    void* roaddr;$/;"	m	struct:_apc_segment_t
+salt1	bloom.h	/^	uint32_t  salt1;$/;"	m	struct:_bloom_t
+salt2	bloom.h	/^	uint32_t  salt2;$/;"	m	struct:_bloom_t
+segments_t	momo_bloomy.c	/^static apc_segment_t* segments_t;$/;"	v	file:
+shmaddr	apc_mmap.h	/^    void* shmaddr;$/;"	m	struct:_apc_segment_t
+size	apc_mmap.h	/^    size_t size;$/;"	m	struct:_apc_segment_t
+size_bytes	bloom.h	/^	size_t size_bytes;$/;"	m	struct:_filter_spec_t
+spec	bloom.h	/^	struct _filter_spec_t spec;$/;"	m	struct:_bloom_t	typeref:struct:_bloom_t::_filter_spec_t
+str	momo_bloomy.php	/^	$str = "Module $module is not compiled into PHP";$/;"	v
+str	momo_bloomy.php	/^	$str = $function($module);$/;"	v
